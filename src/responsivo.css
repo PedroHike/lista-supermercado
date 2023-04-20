@@ -1,7 +1,7 @@
-@media (max-width:460px) {
+@media (max-width:600px) {
     header{
         width: 90%;
-        max-width: 400px;
+        max-width: 550px;
     }
 
     .preenchimento input[name=nome-produto]{
