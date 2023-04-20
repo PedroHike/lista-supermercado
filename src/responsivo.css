@@ -1,7 +1,27 @@
-@media (max-width:400px) {
+@media (max-width:460px) {
     header{
         width: 90%;
-        max-width: 300px;
+        max-width: 400px;
+    }
+
+    .preenchimento input[name=nome-produto]{
+        width: 90%;
+        text-align: center;
     }
     
+    .preenchimento input[name=valor-produto]{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .preenchimento input[name=quantidade]{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .cadastro{
+        width: 100%;
+    }
+
+
 }
