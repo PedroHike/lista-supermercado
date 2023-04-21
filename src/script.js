@@ -38,6 +38,8 @@ function cadastrar() {
         </div>
         `;
 
+    itens.sort();
+    console.log(itens);
         
     } )
 
@@ -53,8 +55,7 @@ function cadastrar() {
     
     let total = document.querySelector('.soma-produto h2 span');
     total.innerHTML = soma
-
-    console.log(itens);
+    
 
     excluirItem.forEach((botao, indice) => {
         botao.addEventListener('click', () => {
@@ -73,9 +74,15 @@ function cadastrar() {
 }
 
 function limpar() {
+    var mensagem;
+    var retorno = confirm('deseja limpar?');
+    if(retorno == true){
     itens = [];
     document.querySelector('.lista-produtos').innerHTML = "";
     document.querySelector('.soma-produto h2 span').innerHTML = 0;
+    }else{
+        mensagem = alert("limpeza cancelada");
+    };
 }
 
 
