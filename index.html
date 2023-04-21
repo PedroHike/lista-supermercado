@@ -2,8 +2,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/responsivo.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
@@ -12,12 +12,13 @@
 
 <body>
     <header>
-        <h2>App Lista de Supermercado</h2>
+        <img src="./src/imagens/supermercados.png" alt="">
+        <h2>Lista de Supermercado</h2>
     </header>
     <div class="cadastro">
         <div class="preenchimento">
             <input type="text" placeholder="Nome do produto" name="nome-produto">
-            <div>
+            <div class="numeros">
                 <input type="number" placeholder="Valor" name="valor-produto" step="0.01">
                 <input type="number" placeholder="Quantidade" name="quantidade" step="0.01">
             </div>
@@ -35,7 +36,7 @@
 
     <button name="limpar" onclick="limpar()">Limpar</button>
 
-    <script src="./src/script.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 
 </html>
