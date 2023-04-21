@@ -29,7 +29,7 @@ header{
 }
 
 img{
-    max-width: 30px;
+    width: 30px;
 }
 
 .cadastro{
@@ -95,21 +95,16 @@ button[name=limpar]{
 .valor{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.excluir{
+.produto{
+    word-spacing: 10px;
+}
+
+.lixeira{
     cursor: pointer;
-    margin-left: 10px;
-    margin-top: 3px;
-    font-size: 15px;
-    border: 1px solid rgba(38, 207, 103, 0.575);
-    background-color: rgba(38, 207, 103, 0.575);
-    color: aliceblue;
     width: 20px;
     height: 20px;
-    font-weight: bold;
-    border-radius: 50%;
-    padding-bottom: 10px;
-
-    
+    margin-left: 10px;
 }
