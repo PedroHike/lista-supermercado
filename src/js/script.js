@@ -30,10 +30,10 @@ function cadastrar() {
 
         listaProdutos.innerHTML += `
         <div class="lista-produto-single">
-            <h4 class="produto">`+ val.nome + `</h4>
+            <h4 class="produto">`+val.nome+ + quantidade.value+`un</h4>
             <div class="valor">
                 <h4>R$<span class="price">`+ val.valor + `</span></h4>
-                <button class="excluir">x</button>
+                <img class="lixeira" src="./src/imagens/excluir.png" alt="">
             </div>
         </div>
         `;
@@ -49,7 +49,7 @@ function cadastrar() {
     quantidade.value = "";
 
 
-    var excluirItem = document.querySelectorAll(".excluir");
+    var excluirItem = document.querySelectorAll(".lixeira");
     var itemLista = document.querySelectorAll('.lista-produto-single');
     var valorExcluido = document.querySelectorAll('.price');
     
