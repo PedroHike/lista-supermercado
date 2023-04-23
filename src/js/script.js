@@ -60,8 +60,8 @@ function cadastrar() {
     excluirItem.forEach((botao, indice) => {
         botao.addEventListener('click', () => {
             itemLista[indice].remove();
-            itens.splice(indice,1)
-
+            itens.splice(indice,1);
+            soma = soma.toFixed(2);
             total.innerHTML = total.innerHTML - valorExcluido[indice].innerHTML;
             
             console.log(itens);
