@@ -30,7 +30,7 @@ function cadastrar() {
 
         listaProdutos.innerHTML += `
         <div class="lista-produto-single">
-            <h4 class="produto">`+val.nome+ + quantidade.value+`un</h4>
+            <h4 class="produto">`+val.nome+' '+quantidade.value+`un</h4>
             <div class="valor">
                 <h4>R$<span class="price">`+ val.valor + `</span></h4>
                 <img class="lixeira" src="./src/imagens/excluir.png" alt="">
